@@ -1,4 +1,4 @@
-# Creative Lens Portfolio
+# Portfolio
 
 Personal portfolio — UI/UX case studies and code projects. Built with TanStack Start (React, SSR), Tailwind CSS v4, shadcn/radix components, and deployed to Cloudflare Workers.
 
