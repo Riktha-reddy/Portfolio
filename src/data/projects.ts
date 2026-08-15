@@ -285,24 +285,26 @@ recommended_crop = crop_engine.predict([soil_type])`,
     "Streamlined daily operational workflows with high-contrast, glanceable maps",
     "Built a modular tracking system for verifiable worker journey logs",
   ],
+  // TODO: these three had `image` paths pointing at /images/projects/ventao-*.png,
+  // but those files were never added to public/ so they'd render as broken images.
+  // Removed the `image` field for now — the page falls back to a plain caption card.
+  // To restore: add the real screenshots to public/images/projects/ and add back
+  // `image: "/images/projects/<filename>.png"` on the entry below.
   wireframes: [
-    { 
-      title: "Active Map View", 
-      caption: "Interactive route map with current location pinpointing and step-by-step sequential destinations", 
+    {
+      title: "Active Map View",
+      caption: "Interactive route map with current location pinpointing and step-by-step sequential destinations",
       type: "mobile",
-      image: "/images/projects/ventao-map-view.png"
     },
-    { 
-      title: "To-Do List", 
-      caption: "Integrated daily tasks panel embedded below mapping layers for quick task clearance", 
+    {
+      title: "To-Do List",
+      caption: "Integrated daily tasks panel embedded below mapping layers for quick task clearance",
       type: "mobile",
-      image: "/images/projects/ventao-todo-list.png"
     },
-    { 
-      title: "Journey History", 
-      caption: "Archived journey logs displaying chronological route histories and completed dispatch summaries", 
+    {
+      title: "Journey History",
+      caption: "Archived journey logs displaying chronological route histories and completed dispatch summaries",
       type: "mobile",
-      image: "/images/projects/ventao-journey-history.png"
     },
   ],
 }

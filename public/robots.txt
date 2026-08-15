@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+
+# TODO: replace with your real deployed URL once you have a custom domain
+# (or your *.workers.dev URL if you're not using a custom domain).
+Sitemap: https://your-domain.example.com/sitemap.xml

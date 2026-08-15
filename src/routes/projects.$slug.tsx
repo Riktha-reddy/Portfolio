@@ -22,7 +22,7 @@ export const Route = createFileRoute("/projects/$slug")({
   head: ({ loaderData }) => ({
     meta: loaderData
       ? [
-          { title: `${loaderData.project.title} — Studio/Dev` },
+          { title: `${loaderData.project.title}` },
           { name: "description", content: loaderData.project.description },
           { property: "og:title", content: loaderData.project.title },
           { property: "og:description", content: loaderData.project.description },

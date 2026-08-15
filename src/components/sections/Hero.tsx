@@ -37,7 +37,7 @@ export function Hero() {
             transition={{ duration: 0.8, delay: 0.1 }}
             className="block"
           >
-            UI/UX Designer
+            Software Engineer
           </motion.span>
           <motion.span
             initial={{ opacity: 0, y: 40 }}
@@ -45,7 +45,7 @@ export function Hero() {
             transition={{ duration: 0.8, delay: 0.25 }}
             className="block"
           >
-            <span className="italic font-light text-foreground/60">&amp;</span> Software 
+            <span className="italic font-light text-foreground/60">&amp;</span> UI/UX
           </motion.span>
           <motion.span
             initial={{ opacity: 0, y: 40 }}
@@ -53,7 +53,7 @@ export function Hero() {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="block"
           >
-            <span className="inline-block text-primary bg-[var(--cream)] px-2 leading-[0.95] py-0">Engineer.</span>
+            <span className="inline-block text-primary bg-[var(--cream)] px-2 leading-[0.95] py-0">Designer.</span>
           </motion.span>
         </h1>
 
@@ -63,8 +63,8 @@ export function Hero() {
           transition={{ duration: 1, delay: 0.7 }}
           className="mt-10 max-w-xl text-base md:text-lg text-foreground/70 text-pretty"
         >
-          I'm a UI/UX Designer and Full-Stack Developer with a passion for creating intuitive and engaging digital experiences. 
-          Always eager to learn, explore new technologies, and take on creative challenges that help me grow as a designer and developer.
+          I'm a Software Engineer and UI/UX Designer with a passion for creating intuitive and engaging digital experiences. 
+          Always eager to learn, explore new technologies, and take on creative challenges that help me grow as a developer and designer.
 
         </motion.p>
 

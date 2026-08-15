@@ -12,13 +12,13 @@ export const Route = createFileRoute("/")({
   component: Index,
   head: () => ({
     meta: [
-      { title: "Studio/Dev — UI/UX Designer & Technical Developer" },
+      { title: "Chilukuri Riktha Reddy" },
       {
         name: "description",
         content:
-          "Portfolio of a UI/UX designer and technical developer. Case studies, code projects, and a place to start work together.",
+          "Portfolio of a UI/UX designer and Software Engineer. Case studies, code projects, and a place to start work together.",
       },
-      { property: "og:title", content: "Studio/Dev — UI/UX Designer & Technical Developer" },
+      { property: "og:title", content: "Chilukuri Riktha Reddy" },
       { property: "og:description", content: "Half studio, half engineering bench. Design and code, shipped." },
     ],
   }),
@@ -37,8 +37,8 @@ function Index() {
         <Contact />
       </main>
       <footer className="px-6 md:px-12 py-10 border-t border-border flex flex-col md:flex-row items-center justify-between gap-3 font-mono text-[11px] uppercase tracking-[0.25em] text-foreground/50">
-        <span>© 2026 Studio/Dev — All rights, all wrongs.</span>
-        <span>Crafted with intention in Lisbon</span>
+        <span>© 2026 Chilukuri Riktha Reddy — All rights, all wrongs.</span>
+        <span>Crafted with intention in India</span>
       </footer>
       <Toaster />
     </div>

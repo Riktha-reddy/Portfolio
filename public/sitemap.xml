@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  TODO: replace https://your-domain.example.com with your real deployed URL
+  (your *.workers.dev URL, or your custom domain once you connect one).
+
+  This list is generated from the `slug` values in src/data/projects.ts.
+  If you add/remove/rename a project there, update this file to match.
+-->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://your-domain.example.com/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://your-domain.example.com/projects/halo-banking</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://your-domain.example.com/projects/ai-therapist-app</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://your-domain.example.com/projects/forma-os</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://your-domain.example.com/projects/soil-type-detection</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://your-domain.example.com/projects/ventao-journey-logger</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+</urlset>

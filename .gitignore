@@ -1,32 +1,59 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+package-lock.json
+yarn.lock
+bun.lock
+
+# Environment variables (SENSITIVE - NEVER COMMIT)
+.env
+.env.local
+.env.*.local
+.env*.local
+
+# Build outputs
+dist/
+build/
+.vite/
+.turbo/
+.next/
+
+# Wrangler (Cloudflare Workers)
+.wrangler/
+wrangler.lock
+
+# IDE and Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*.sublime-project
+*.sublime-workspace
+.DS_Store
+
 # Logs
-logs
 *.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-pnpm-debug.log*
 lerna-debug.log*
 
-node_modules
-dist
-dist-ssr
-.output
-.vinxi
-.tanstack/**
-.nitro
-*.local
+# Cache
+.cache/
+.eslintcache
+.stylelintcache
 
-# Wrangler / Cloudflare
-.wrangler/
-.dev.vars
-
-# Editor directories and files
-.vscode/*
-!.vscode/extensions.json
-.idea
+# OS files
+Thumbs.db
 .DS_Store
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw?
+.AppleDouble
+.LSOverride
+
+# Testing
+coverage/
+.nyc_output/
+
+# Misc
+*.pem
+.env.test

@@ -72,14 +72,20 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
-      { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
-      { property: "og:type", content: "website" },
-      { name: "twitter:card", content: "summary" },
-      { name: "twitter:site", content: "@Lovable" },
+      // These are fallback/default tags — individual routes (e.g. "/", "/projects/$slug")
+      // override title/description/og:* with their own values via their own head().
+      { title: "Chilukuri Riktha Reddy" },
+      {
+        name: "description",
+        content:
+          "Portfolio of a UI/UX designer and technical developer. Case studies, code projects, and a place to start work together.",
+      },
+      { name: "author", content: "Riktha Reddy" },
+      { property: "og:title", content: "Chilukuri Riktha Reddy" },
+      {
+        property: "og:description",
+        content: "Half studio, half engineering bench. Design and code, shipped.",
+      },
     ],
     links: [
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
@@ -92,6 +98,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         rel: "stylesheet",
         href: appCss,
       },
+      { rel: "icon", type: "image/svg+xml", href: "/favicon.svg" },
     ],
   }),
   shellComponent: RootShell,

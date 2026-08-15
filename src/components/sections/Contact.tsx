@@ -8,8 +8,13 @@ const socials = [
   { label: "Email", value: "rikthawork@gmail.com", href: "mailto:rikthawork@gmail.com" },
   { label: "GitHub", value: "Riktha-reddy", href: "https://github.com/Riktha-reddy" },
   { label: "Behance", value: "rikthareddy18", href: "https://www.behance.net/rikthareddy18" },
-  { label: "Read.cv", value: "/studio", href: "#" },
+  // Add another entry here (e.g. Read.cv, LinkedIn) once you have a real URL for it.
 ];
+
+// TODO: replace with your real Formspree form ID (formspree.io -> New Form -> copy the
+// endpoint it gives you, looks like "https://formspree.io/f/abcdwxyz").
+// Free tier allows 50 submissions/month.
+const FORMSPREE_ENDPOINT = "https://formspree.io/f/mjybebgo";
 
 export function Contact() {
   const [sending, setSending] = useState(false);
@@ -19,9 +24,9 @@ export function Contact() {
     setSending(true);
     const form = e.currentTarget;
     const data = new FormData(form);
-  
+
     try {
-      const res = await fetch("https://formspree.io/f/YOUR_FORM_ID", {
+      const res = await fetch(FORMSPREE_ENDPOINT, {
         method: "POST",
         body: data,
         headers: { Accept: "application/json" },
@@ -49,7 +54,7 @@ export function Contact() {
 
           <div className="flex items-center justify-between flex-wrap gap-4">
             <p className="font-mono text-[11px] uppercase tracking-[0.2em] text-foreground/50 max-w-xs">
-              Avg. reply &lt; 24h • Based in Lisbon (GMT+1)
+              Avg. reply &lt; 24h • Based in India (GMT+5:30)
             </p>
             <Magnetic>
               <button
