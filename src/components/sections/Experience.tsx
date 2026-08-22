@@ -1,34 +1,26 @@
 import { motion } from "motion/react";
 
 const work = [
-  { year: "2025-Now", role: "Software Engineer",org: "Cognizant", note: "Java Developer Intern, working on a project using Java, Spring Boot, and MySQL." },
-  { year: "2025",role:"UI/UX Designer", org: "Moovicart", note: "Designed UI/UX for a mobile application using Figma." },
-  { year: "2023",role:"UI/UX Design Intern", org: "Echo-day jobs", note: "Designed UI/UX for a mobile application using Figma." },
-  { year: "2022",role:"UI/UX Design Intern", org: "NFC Solutions", note: "Designed UI/UX for a Website using Figma and Designed marketing materials for the clients." },
+  { year: "July 2025-Now", role: "Software Engineer",org: "Cognizant", note: "Java Developer, working on a project using Java, Spring Boot, and MySQL." },
+  { year: "Jan 2025-July 2025",role:"UI/UX Designer", org: "Moovicart", note: "Designed a B2B2C footbal talent networking platform, similar to LinkedIn." },
+  { year: "April 2023-July 2023",role:"UI/UX Design Intern", org: "Echo-day jobs", note: "Designed a B2B2C workforce marketplace mobile application COnnecting daily-wageworkers with employers." },
+  { year: "April 2022-October 2022",role:"UI/UX Design Intern", org: "NFC Solutions", note: "Designed a B2B website, marketing materials and communication assets." },
 ];
 
 const education = [
-  { year: "2021-2025", role: "B.tech in Computer Science and Engineering", org: "Institute of Aeronautical Engineering", note: "Specialization in programming, data structures, and algorithms"},
-  { year: "2019-2021", role: "Intermediate", org: "Trividyaa junior college", note: "Focus Maths, Physics, and Chemistry" },
-  { year: "2019", role: "Marticulation", org: "Kendriya Vidyalaya, AFS Begumpet", note: " Basic education, scored: 88.8%" },
+  { year: "2021-2025", role: "B.Tech in Computer Science and Engineering", org: "Institute of Aeronautical Engineering", note: "Scored: 8.38CGPA"},
+  { year: "2019-2021", role: "Intermediate", org: "Trividyaa Junior College", note: "Scored: 96.8%" },
+  { year: "2019", role: "Marticulation", org: "Kendriya Vidyalaya, AFS Begumpet", note: "Scored: 88.8%" },
 ];
 
 const certificates = [
   // AI & Gen AI
   { year: "2026", name: "Microsoft Certified: Azure AI Engineer Associate", org: "Microsoft", note: "Expires Jun 2027", url: "https://learn.microsoft.com/en-gb/users/chilukuririkthareddy-5961/credentials/c147b3f38b99a10f" },
   { year: "2026", name: "Claude Certified Architect", org: "Anthropic", note: "Expires Dec 2026", url: "https://verify.skilljar.com/c/xdkm226c3prk" },
-  { year: "2024", name: "Google AI Essentials", org: "Google", note: "", url: "https://www.coursera.org/account/accomplishments/verify/NG87PGP338NJ" },
-  { year: "2024", name: "Microsoft Certified: Azure AI Fundamentals", org: "Microsoft", note: "", url: "https://learn.microsoft.com/en-us/users/rikthareddy-4329/credentials/b04c4348f63f181f" },
   // UI/UX
   { year: "2024", name: "Foundations of User Experience (UX) Design", org: "Google", note: "", url: "https://www.coursera.org/account/accomplishments/verify/4YBE5JNN16MG" },
   { year: "2024", name: "Start the UX Design Process: Empathize, Define, and Ideate", org: "Google", note: "", url: "https://www.coursera.org/account/accomplishments/verify/34P87HAHGVA5" },
   { year: "2024", name: "Build Wireframes and Low-Fidelity Prototypes", org: "Google", note: "", url: "https://www.coursera.org/account/accomplishments/verify/BU5W3YUZUDGY" },
-  // Java
-  { year: "2024", name: "Certificate for Java", org: "Coding Ninjas", note: "", url: "" },
-  // Data
-  { year: "2024", name: "Data Analysis with Python", org: "freeCodeCamp", note: "", url: "https://www.freecodecamp.org/certification/fcc4e956618-f9f5-4c3d-a066-de3573dd713d/data-analysis-with-python-v7" },
-  // Infosys
-  { year: "2024", name: "Pragati Path to Future, Cohort 1", org: "Infosys Springboard", note: "", url: "" },
 ];
 
 export function Experience() {

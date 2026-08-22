@@ -6,19 +6,11 @@ export function Hero() {
   return (
     <section
       id="home"
-      className="relative min-h-screen flex flex-col justify-between px-6 md:px-12 pt-32 pb-12 overflow-hidden"
+      className="relative min-h-screen flex flex-col justify-start px-6 md:px-12 pt-20 pb-12 overflow-hidden"
     >
-      {/* Status bar */}
-      <div className="flex items-center justify-between font-mono text-[11px] uppercase tracking-[0.25em] text-foreground/60">
-        <span>Portfolio / 2026</span>
-        <span className="flex items-center gap-2">
-          <span className="w-2 h-2 rounded-full bg-[var(--cream)] animate-blink" />
-          Available for work
-        </span>
-      </div>
 
       {/* Headline */}
-      <div className="my-auto py-16">
+      <div className="mt-4 md:mt-8">
         <motion.div
           initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
@@ -61,10 +53,10 @@ export function Hero() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1, delay: 0.7 }}
-          className="mt-10 max-w-xl text-base md:text-lg text-foreground/70 text-pretty"
+          className="mt-10 max-w-3xl text-base md:text-lg text-foreground/70 text-pretty"
         >
           I'm a Software Engineer and UI/UX Designer with a passion for creating intuitive and engaging digital experiences. 
-          Always eager to learn, explore new technologies, and take on creative challenges that help me grow as a developer and designer.
+          I enjoyexploring new technologies,experimenting with creative ideas, and solving problems through thoughtful design and technology.
 
         </motion.p>
 
@@ -74,16 +66,7 @@ export function Hero() {
           transition={{ duration: 0.8, delay: 0.9 }}
           className="mt-10 flex flex-wrap items-center gap-4"
         >
-          <Magnetic as="a" href="#contact">
-            <span
-              onMouseEnter={() => setCursorMode("link")}
-              onMouseLeave={() => setCursorMode("default")}
-              className="inline-flex items-center gap-3 px-7 py-4 rounded-full bg-[var(--cream)] text-[var(--ink)] font-medium hover-invert border border-[var(--cream)]"
-            >
-              Start a project
-              <span aria-hidden>→</span>
-            </span>
-          </Magnetic>
+          
           <Magnetic as="a" href="#projects">
             <span
               onMouseEnter={() => setCursorMode("link")}
@@ -91,6 +74,7 @@ export function Hero() {
               className="inline-flex items-center gap-3 px-7 py-4 rounded-full border border-foreground/30 text-foreground hover-invert"
             >
               View work
+              <span aria-hidden>→</span>
             </span>
           </Magnetic>
         </motion.div>
