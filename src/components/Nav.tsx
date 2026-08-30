@@ -25,42 +25,31 @@ export function Nav() {
         scrolled ? "backdrop-blur-md bg-[color-mix(in_oklab,var(--ink)_70%,transparent)] border-b border-border" : ""
       }`}
     >
-      <div className="flex items-center justify-between px-6 md:px-12 py-5">
-        <a
-          href="#home"
-          onMouseEnter={() => setCursorMode("link")}
-          onMouseLeave={() => setCursorMode("default")}
-          className="font-display text-lg font-semibold tracking-tight flex items-center gap-2"
-        >
-          <span className="inline-block w-2 h-2 bg-[var(--cream)] rounded-full" />
-          Riktha Reddy<span className="text-primary">;)</span>
-        </a>
+      <div className="relative flex items-center justify-center px-6 md:px-12 py-5">
+  <a
+    href="#home"
+    onMouseEnter={() => setCursorMode("link")}
+    onMouseLeave={() => setCursorMode("default")}
+    className="absolute left-6 md:left-12 font-display text-lg font-semibold tracking-tight flex items-center gap-2"
+  >
+    <span className="inline-block w-2 h-2 bg-[var(--cream)] rounded-full" />
+    Riktha Reddy<span className="text-primary">;)</span>
+  </a>
 
-        <nav className="hidden md:flex items-center gap-1 font-mono text-[11px] uppercase tracking-[0.2em]">
-          {links.map((l) => (
-            <a
-              key={l.href}
-              href={l.href}
-              onMouseEnter={() => setCursorMode("link")}
-              onMouseLeave={() => setCursorMode("default")}
-              className="px-4 py-2 rounded-full hover-invert text-foreground/70 hover:text-current"
-            >
-              {l.label}
-            </a>
-          ))}
-        </nav>
-
-        <Magnetic as="a" href="#contact">
-          <span
-            onMouseEnter={() => setCursorMode("link")}
-            onMouseLeave={() => setCursorMode("default")}
-            className="hidden sm:inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-primary text-[var(--cream)] font-mono text-[11px] uppercase tracking-[0.2em] hover-invert border border-primary"
-          >
-            <span className="w-1.5 h-1.5 rounded-full bg-[var(--cream)] animate-blink" />
-            Available
-          </span>
-        </Magnetic>
-      </div>
+  <nav className="hidden md:flex items-center gap-1 font-mono text-[11px] uppercase tracking-[0.2em]">
+    {links.map((l) => (
+      <a
+        key={l.href}
+        href={l.href}
+        onMouseEnter={() => setCursorMode("link")}
+        onMouseLeave={() => setCursorMode("default")}
+        className="px-4 py-2 rounded-full hover-invert text-foreground/70 hover:text-current"
+      >
+        {l.label}
+      </a>
+    ))}
+  </nav>
+</div>
     </header>
   );
 }
